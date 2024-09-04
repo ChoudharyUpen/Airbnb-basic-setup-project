@@ -1,0 +1,55 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the posts horizontally */
+    gap: 20px; /* Space between posts */
+    padding: 0 20px; /* Padding on left and right */
+}
+
+.post {
+    flex: 1 1 calc(33.333% - 40px); /* Adjust width for 3 items per row with space */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.post img {
+    width: 100%; /* Ensure the image fills the container */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Crop and cover the container */
+    border-radius: 8px;
+}
+
+.post h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.post p {
+    font-size: 1.1em;
+    color: #666;
+}
